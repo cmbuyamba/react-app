@@ -13,27 +13,23 @@ class Calculator extends React.Component{
     }
 
     onClick = () => {
-        const result = calculator.add(this.state.a, this.state.b);
-        this.setState({result})
+        this.setState({result: calculator.add(this.state.a, this.state.b)})
     }
 
-    onChange = (event) => {
-        const id = event.target.id;
-        if(id === "a"){
-            this.setState({a: event.target.value})
-        }
+    onChangeA = (event) => {
+        this.setState({a: event.target.value})
+    }
 
-        if(id === "b"){
-            this.setState({b: event.target.value})
-        }
+    onChangeB = (event) => {
+        this.setState({b: event.target.value})
     }
 
     render(){
         return <div>
             <h1>My Calculator</h1>
-            <label>A </label><input type="number" onChange={this.onChange} id="a" value={this.state.a} />
+            <label>A </label><input type="number" onChange={this.onChangeA} value={this.state.a} />
             <br/>
-            <label>B </label><input type="number" onChange={this.onChange}  id="b" value={this.state.b} />
+            <label>B </label><input type="number" onChange={this.onChangeB} value={this.state.b} />
             <br/>
             <button onClick={this.onClick}>Calculate</button> {this.state.result}
         </div>
