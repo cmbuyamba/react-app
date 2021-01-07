@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Calculator from '../components/Calculator'
 
-const HelloWorld = () => <h1>Hello World</h1>
-
-render(<HelloWorld />, document.getElementById("root"));
+render(<Calculator />, document.getElementById("root"));
