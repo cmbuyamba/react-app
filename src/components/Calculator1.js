@@ -24,10 +24,13 @@ const [result, setResult] = useState(0);
         const operation = event.target.innerText;
         if(operation === "Add"){
             setResult(calculator.add(number1, number2))
+            
         }
-        else {
+        else if (operation === "Multiply") {
             setResult(calculator.multiply(number1, number2))
-        }  
+        }  else {
+            setResult(calculator.divise(number1, number2))
+        }
     }
 
         return <div>
@@ -38,6 +41,7 @@ const [result, setResult] = useState(0);
             <br/>
             <button onClick={onClick}>Add</button>
             <button onClick={onClick}>Multiply</button>
+            <button onClick={onClick}>divise</button>
         </div>
     
 }
