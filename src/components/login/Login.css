@@ -1,0 +1,21 @@
+.login-main-container {
+    width: 75%;
+    margin: auto;
+    border: 2px solid green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.login-image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.login-image-avatar{
+    width: 30%;
+    border-radius: 50%;
+}
+
+label{
+    text-align: left;
+}
