@@ -13,7 +13,8 @@ class App extends React.Component {
                 <h1>Page Title</h1>
                 <h2>Major section heading</h2>
                 <h3>subsection of h2 elemnts</h3>
-                <p>We are <span>learnig</span> to React best <a href="#">practices</a> - <hr/>DRC - Goma - Kinshasa and detroit Michigan</p>
+                <hr/>
+                <p>We are <span>learnig</span> to React best <a href="#">practices</a> - DRC - Goma - Kinshasa and detroit Michigan</p>
                 <ul>
                     <li>&lt; &gt; Shoes</li>
                     <li>&ntilde; &egrave; &copy; &pi; Pants</li>

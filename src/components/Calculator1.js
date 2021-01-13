@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header'
 import calculator from '../services/calculator'
-import Input from './Input'
+import Input from './common/input/Input'
 
 //Hooks
 
