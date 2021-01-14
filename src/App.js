@@ -1,10 +1,10 @@
 import React from 'react';
-import Calculator1 from './components/Calculator1'
-import './App.css'
+import Calculator1 from './components/Calculator1';
+import './App.css';
 
 class App extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
     }
 
     render(){
@@ -29,7 +29,7 @@ class App extends React.Component {
                 </ol>
             </div>
         <Calculator1 />
-        </>
+        </>;
     }
 }
 

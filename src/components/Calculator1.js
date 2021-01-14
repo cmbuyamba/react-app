@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from './Header'
-import calculator from '../services/calculator'
-import Input from './common/input/Input'
+import Header from './Header';
+import calculator from '../services/calculator';
+import Input from './common/input/Input';
 
 //Hooks
 
@@ -13,25 +13,25 @@ const [result, setResult] = useState(0);
 
     const onChange = (event) => {
         if(event.target.name === "number1") {
-            setNumber1(event.target.value)
+            setNumber1(event.target.value);
         }
         else {
-            setNumber2(event.target.value)
+            setNumber2(event.target.value);
         }
-    }
+    };
 
     const onClick = (event) => {
         const operation = event.target.innerText;
         if(operation === "Add"){
-            setResult(calculator.add(number1, number2))
+            setResult(calculator.add(number1, number2));
             
         }
         else if (operation === "Multiply") {
-            setResult(calculator.multiply(number1, number2))
+            setResult(calculator.multiply(number1, number2));
         }  else {
-            setResult(calculator.divise(number1, number2))
+            setResult(calculator.divise(number1, number2));
         }
-    }
+    };
 
         return <div>
             <Header title={'My Calculator'} />
@@ -42,8 +42,8 @@ const [result, setResult] = useState(0);
             <button onClick={onClick}>Add</button>
             <button onClick={onClick}>Multiply</button>
             <button onClick={onClick}>divise</button>
-        </div>
+        </div>;
     
-}
+};
 
 export default Calculator1;
