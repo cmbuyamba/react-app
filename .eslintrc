@@ -1,0 +1,22 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+
+    "extends": [
+        "plugin:react/recommended"
+    ],
+
+    "parser": "babel-eslint",
+    "rules": {
+        "react/prop-types": "off",
+        "semi": [2, "always"]
+    }
+}

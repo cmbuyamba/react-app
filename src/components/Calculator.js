@@ -1,34 +1,34 @@
 import React from 'react';
-import Header from './Header'
-import calculator from '../services/calculator'
-import Input from './Input'
+import Header from './Header';
+import calculator from '../services/calculator';
+import Input from './Input';
 
 class Calculator extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
             number1: 0,
             number2: 0,
             result: 0
-        }
+        };
     }
 
     
 
     onChange = (event) => {
-        this.setState({[event.target.name]: event.target.value})
+        this.setState({[event.target.name]: event.target.value});
     }
 
     onClick = (event) => {
         const operation = event.target.innerText;
         let result;
         if(operation === "Add"){
-            result = calculator.add(this.state.number1, this.state.number2)
+            result = calculator.add(this.state.number1, this.state.number2);
         }
         else {
-            result = calculator.multiply(this.state.number1, this.state.number2)
+            result = calculator.multiply(this.state.number1, this.state.number2);
         }
-        this.setState({result})
+        this.setState({result});
     }
 
     render(){
@@ -40,7 +40,7 @@ class Calculator extends React.Component {
             <br/>
             <button onClick={this.onClick}>Add</button>
             <button onClick={this.onClick}>Multiply</button>
-        </div>
+        </div>;
     }
 }
 
