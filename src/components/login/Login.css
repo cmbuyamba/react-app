@@ -1,21 +1,20 @@
 .container {
-    margin-top: 64px!important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  margin-top: 64px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .avatar {
-    margin: 8px!important;
-    background-color: #dc004e!important;
-  }
+.avatar {
+  margin: 8px !important;
+  background-color: #dc004e !important;
+}
 
-  .form {
-    width: 100%; /* Fix IE 11 issue.*/
-    margin-top: 8px!important;
-  }
+.form {
+  width: 100%; /* Fix IE 11 issue.*/
+  margin-top: 8px !important;
+}
 
-  .submit {
-    margin: 24px 0 16px!important;
-  }
-  
+.submit {
+  margin: 24px 0 16px !important;
+}
