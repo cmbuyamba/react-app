@@ -1,0 +1,8 @@
+.main-app-bar-container {
+    display: flex;
+    flex-direction: row!important;
+}
+
+.main-app-bar-menu-icon {
+    padding: 18px 0;
+}
