@@ -1,8 +1,51 @@
 .main-app-bar-container {
-    display: flex;
-    flex-direction: row!important;
+  display: flex;
+  background-color: #2196f3;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.main-app-bar-left {
+  display: flex;
+  width: 20%;
+  justify-content: flex-start;
+}
+
+.main-app-bar-left-typo {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+}
+
+.main-app-bar-menu-mouse-over {
+  background-color: #3f51b5;
 }
 
 .main-app-bar-menu-icon {
-    padding: 18px 0;
+  cursor: pointer;
+}
+
+.main-app-bar-right-email {
+    padding: 10px;
+}
+
+.main-app-bar-right {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  padding: 14px;
+}
+
+.main-app-bar-right div {
+  display: flex;
+}
+
+.main-app-bar-menu-icon {
+  padding: 13px 7px;
+}
+
+.main-app-bar-toolbar-typo {
+  width: 230px;
+  height: 50px;
 }
